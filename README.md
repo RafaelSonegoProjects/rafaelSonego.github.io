@@ -1,2 +1,2 @@
-# exampleBootstrap
-Simple project using bootstrap
+# rafaelsonego.com
+static page about me and my projects

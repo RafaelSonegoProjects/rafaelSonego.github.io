@@ -44,8 +44,8 @@
 				<!-- CRIANDO A NAVBAR-->
 				<div class="collapse navbar-collapse" id="menu">
 					<ul class="nav navbar-nav">
-						<li><a href="about.html">About</a></li>
-						<li><a href="resume.html">Resume</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Resume</a></li>
 						<li><a href="https://www.linkedin.com/in/rafaelsonego/" target="_blank">Linkedin</a></li>
 						<li><a href="https://github.com/RafaelSonego" target="_blank">Github</a></li>
 					</ul>
@@ -55,7 +55,7 @@
 						<li>
 							<!-- Criando o Titulo do dropdown dropdown-toggle means que ele será o titulo-->
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								My Account
+								My Projects
 								<!-- Somente a setinha para baixo -->
 								<span class="caret"></span>
 							</a>
@@ -73,8 +73,8 @@
 									<!-- Removendo o estilo-->
 									<ul class="list-unstyled">
 										<li>Rafael Sonego</li>
-										<li><a href="login.html">Login</a></li>
-										<li><a href="">Sair</a></li>
+										<li><a href="#"> - </a></li>
+										<li><a href="#"> - </a></li>
 									</ul>	
 								</div>
 							</div>
@@ -86,240 +86,6 @@
 
 			</div>
 		</nav>
-
-		<!-- Criando o conteudo da pagina -->
-		<div class="container">
-		<!-- Criando o componente para mostrar a estrutura da navegacao -->
-			<ol class="breadcrumb">
-				<li><a href="#" target="_blank">Projects</a></li>
-				<li class="active">Search Projects</a></li>
-			</ol>
-
-			<!-- Grupo que contera a pesquisa -->
-			<div class="row search">
-				<div class="col-xs-12 col-md-6">
-					<h1>Search Projects</h1>
-				</div>
-				<div class="col-xs-12 col-md-4 col-md-offset-2">
-					<div class="input-group">
-						<input type="text" name="search" class="form-control" placeholder="Project Name">
-						<span class="input-group-btn">
-							<button type="button" class="btn btn-default">
-								<span class="glyphicon glyphicon-search"></span>
-							</button>
-						</span>
-					</div>
-				</div>
-			</div>
-
-			<!-- Div contendo a tabela -->
-			<!-- Informa que a tabela será responsiva -->
-			<div class="table-responsive">
-				<!-- Informa que será uma tabela, zebrada, com borda e com o efeito do mouse quando passa por cima -->
-				<!-- table__format criei somente para dar um space -->
-				<table class="table table-striped table-bordered table-hover table__format">
-					<thead>
-						<tr>
-							<th>Column 1</th>
-							<th>Column 2</th>
-							<th>Column 3</th>
-							<th>Column 4</th>
-							<th>Column 5</th>
-							<th>Column 6</th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<!-- Texto alinhado no centro e o span para dar uma cor primaria do bootstrap -->
-							<td class="text-center"><span class="label label-primary"> Label</span></td>
-							<td class="text-center">
-								<!-- Para o tooltip funcionar, utilizamos o main.js que contem a chamada jquery para mostrar em preto -->
-								<a href="" data-toggle="tooltip" title="Success"><span class="glyphicon glyphicon-ok text-success"></span></a>
-								<a href="" data-toggle="tooltip" title="Warning"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
-								<a href="" data-toggle="tooltip" title="Danger"><span class="glyphicon glyphicon-trash text-danger"></span></a>
-							</td>
-						</tr>
-						<tr>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td class="text-center"><span class="label label-default"> Label</span></td>
-							<td class="text-center">
-								<a href="" data-toggle="tooltip" title="Success"><span class="glyphicon glyphicon-ok text-success"></span></a>
-								<a href="" data-toggle="tooltip" title="Warning"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
-								<a href="" data-toggle="tooltip" title="Danger"><span class="glyphicon glyphicon-trash text-danger"></span></a>
-							</td>
-						</tr>
-						<tr>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td class="text-center"><span class="label label-danger"> Label</span></td>
-							<td class="text-center">
-								<a href="" data-toggle="tooltip" title="Success"><span class="glyphicon glyphicon-ok text-success"></span></a>
-								<a href="" data-toggle="tooltip" title="Warning"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
-								<a href="" data-toggle="tooltip" title="Danger"><span class="glyphicon glyphicon-trash text-danger"></span></a>
-							</td>
-						</tr>
-						<tr>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td class="text-center"><span class="label label-success"> Label</span></td>
-							<td class="text-center">
-								<a href="" data-toggle="tooltip" title="Success"><span class="glyphicon glyphicon-ok text-success"></span></a>
-								<a href="" data-toggle="tooltip" title="Warning"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
-								<a href="" data-toggle="tooltip" title="Danger"><span class="glyphicon glyphicon-trash text-danger"></span></a>
-							</td>
-						</tr>
-						<tr>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td>VALUE</td>
-							<td class="text-center"><span class="label label-warning"> Label</span></td>
-							<td class="text-center">
-								<a href="" data-toggle="tooltip" title="Success"><span class="glyphicon glyphicon-ok text-success"></span></a>
-								<a href="" data-toggle="tooltip" title="Warning"><span class="glyphicon glyphicon-pencil text-warning"></span></a>
-								<a href="" data-toggle="tooltip" title="Danger"><span class="glyphicon glyphicon-trash text-danger"></span></a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-
-			<!-- Criando modal e paginaçao -->
-			<footer class="row">
-				<div class="col-sm-6">
-					<!-- no toogle fala que será um modal e o target é informando o id do modal -->
-					<button class="btn btn-primary" data-toggle="modal" data-target="#newProjectModal"> New Project</button>
-				</div>
-				<div class="col-sm-6 text-right pagination__format">
-					<ul class="pagination">
-						<li class="disabled"><a href=""><span><<</span></a></li>
-						<li class="active"><a href=""><span>1</span></a></li>
-						<li><a href=""><span>2</span></a></li>
-						<li><a href=""><span>3</span></a></li>
-						<li><a href=""><span>4</span></a></li>
-						<li><a href=""><span>5</span></a></li>
-						<li><a href=""><span>>></span></a></li>
-					</ul>
-				</div>
-			</footer>
-		</div>
-
-		<!-- Modal -->
-		<!-- informamos que a div será um modal e Fade é o efeito quando o modal aparecer -->
-		<div class="modal fade" id="newProjectModal">
-			<div class="modal-dialog">
-				<!-- COnteudo do modal - possui 3 partes, header, body e footer separados por linha -->
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" data-dismiss="modal" class="close">
-							<span>&times;</span>
-						</button>
-						<h4 class="modal-title">New Project</h4>
-					</div>
-					<!-- body e footer fica dentro de um form para poder fazer as requisicoes -->
-					<form>
-						<!-- Corpo -->
-						<div class="modal-body">
-							<!-- Criando alertas -->
-							<div class="alert alert-danger">
-								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
-								Error!
-							</div>
-							<div class="alert alert-success">
-								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
-								Success!
-							</div>
-							<div class="alert alert-warning">
-								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
-								Warning!
-							</div>
-							<div class="alert alert-info">
-								<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
-								Info!
-							</div>
-
-							<!-- Primeira linha -->
-							<div class="row">
-								<div class="form-group col-xs-12">
-									<label class="control-label">Value</label>
-									<p class="form-control-static"> 123456</p>
-								</div>
-							</div>
-							<!-- Segunda linha com dois campos select -->
-							<div class="row">
-								<div class="form-group col-sm-5">
-									<label class="control-label" for="selectClient">Client</label>
-									<select class="form-control" id="selectClient">
-										<option value="">Select..</option>
-										<option value="Option Value">Option Value</option>
-										<option value="Option Value">Option Value</option>
-										<option value="Option Value">Option Value</option>
-										<option value="Option Value">Option Value</option>
-										<option value="Option Value">Option Value</option>
-									</select>
-								</div>
-								<div class="form-group col-sm-7 has-warning">
-									<label class="control-label" for="selectService">Client</label>
-									<select class="form-control" id="selectService">
-										<option value="">Select..</option>
-										<option value="Service Value">Service Value</option>
-										<option value="Service Value">Service Value</option>
-										<option value="Service Value">Service Value</option>
-										<option value="Service Value">Service Value</option>
-										<option value="Service Value">Service Value</option>
-									</select>
-								</div>
-							</div>
-							<!-- Terceira linha com o textarea-->
-							<div class="row">
-								<div class="form-group col-xs-12 has-error">
-									<label class="control-label" for="filedText">Note</label>
-									<textarea class="form-control" rows="3" id="filedText"></textarea>
-								</div>
-							</div>							
-							<!-- Quarta linha com o campo valor agrupando a um icone-->
-							<div class="row">
-								<div class="form-group col-sm-4 has-success">
-									<label class="control-label" for="value">Value</label>
-									<!-- informa que sera agrumado o icone com o text -->
-									<div class="input-group">
-										<div class="input-group-addon">CAD$</div>	
-										<input type="text" name="value" id="value" class="form-control">
-									</div>
-								</div>
-							</div>
-
-						</div>					
-						<div class="modal-footer">
-							<button type="reset" class="btn btn-danger">Reset</button>
-							<button type="submit" class="btn btn-primary">OK</button>
-						</div>
-					</form>
-				</div>	
-			</div>
-		</div>
 
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
