@@ -1,3 +1,7 @@
+.navbar {
+	font-size: 20px;
+}
+
 .logo-tipo {
 	padding: 10px;
 	margin-right: 20px;
@@ -18,22 +22,6 @@
 	margin-bottom: 2px;
 }
 
-.search {
-}
-
-.search h1 {
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.table__format {
-	margin-top: 2%;
-}
-
-.pagination__format .pagination {
-	margin: 0px;
-}
-
 @media (max-width: 767px) {
 	.profile {
 		color: #FFF;
@@ -48,14 +36,4 @@
 		text-decoration: none;
 		color: #FFF;
 	}
-
-	.pagination__format {
-		text-align: center;
-	}
-
-	.pagination__format .pagination {
-		margin-top: 2%;
-		margin-bottom: 2%;
-	}
-
 }
