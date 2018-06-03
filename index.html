@@ -1,264 +1,334 @@
 <!DOCTYPE html>
-<html> 
-	<link rel="shortcut icon" href="img/favicon.ico" >
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<link rel="shortcut icon" href="img/profile.jpg">
 
-		<title>Rafael Sonego da Silva</title>
+<head>
 
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-	</head>
-	<!--
-		bootstrap grid - 12 columns
-		|	|	|	|	|	|	|	|	|	|	|	|	|
-		LG >= 1200PX - class = "col-lg-NUMERO DE COLUNAS"
-		992PX <= MD < 1200PX class = "col-md-NUMERO DE COLUNAS"
-		768PX <= SM < 992PX class = "col-sm-NUMERO DE COLUNAS"
-		XS  < 768PX class = "col-xs-NUMERO DE COLUNAS"
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-		col-md-offset-NUMERO Define quantas posicoes vazias ir'a utilizar no grid
-	-->
-	<body>
-		<!-- Criando um navbar com bootstrap -->
-		<nav class="navbar navbar-inverse navbar-static-top">
-			<!-- div que contem todo o conteudo da navbar -->
-			<div class="container">
+  <title>Rafael Silva</title>
 
-				<div class="navbar-header">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-					<!-- Criando os botoes que serao apresentados quando a tela for menor! neste momento associando qual será o elemento que será apresentado no caso o #menu -->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-					<a href="#" class="navbar-brand logo-tipo">
-						<img src="img/rafael.jpg" class="img-responsive img-circle" alt="Logo Rafael Sonego">
-					</a>
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
 
-				</div>
+</head>
 
-				<!-- CRIANDO A NAVBAR-->
-				<div class="collapse navbar-collapse" id="menu">
-					<ul class="nav navbar-nav">
-						<li><a href="#about">About</a></li>
-						<li><a href="#technicalProficiencies">Technical Proficiencies</a></li>
-						<li><a href="#experience">Work Experience</a></li>
-						<li><a href="#education">Education</a></li>
-						<li><a href="#volunteer">Volunteer</a></li>
-						<li><a href="https://www.linkedin.com/in/rafaelsonego/" target="_blank">Linkedin</a></li>
-						<li><a href="https://github.com/RafaelSonego" target="_blank">Github</a></li>
-					</ul>
+<body id="page-top">
 
-					<!-- Dropdown ficando do lado esquerdo -->
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<!-- Criando o Titulo do dropdown dropdown-toggle means que ele será o titulo-->
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-								My Projects
-								<!-- Somente a setinha para baixo -->
-								<span class="caret"></span>
-							</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Start Bootstrap</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-							<!-- Criando o conteudo do dropdown e colocando um css para poderemos manipular-->
-							<div class="dropdown-menu profile">
-								<!-- Para a div que contem a imagem, 4 espaçoes -->
-								<!-- hidden-xs informa que no menor tamanho de tela, esta div será oculta -->
-								<div class="col-sm-4 hidden-xs">
-									<img src="img/rafael.jpg" class="img-responsive img-rounded" alt="Logo Rafael Sonego">
-								</div>
-								
-								<!-- Para a div que contem a imagem, 8 espaços -->
-								<div class="col-sm-8">
-									<!-- Removendo o estilo-->
-									<ul class="list-unstyled">
-										<li>Rafael Sonego</li>
-										<li><a href="https://github.com/RafaelSonego/sampleAngular2" target="_blank"> Angular 2 </a></li>
-										<li><a href="https://github.com/RafaelSonego/sampleJavaScript" target="_blank"> JavaScript </a></li>
-										<li><a href="https://github.com/RafaelSonego/javaSamples" target="_blank"> Java </a></li>
-										<li><a href="https://github.com/RafaelSonego/sampleReflection" target="_blank"> Reflection Java </a></li>
-										<li><a href="https://github.com/RafaelSonego/exampleBootstrap" target="_blank"> Bootstrap </a></li>
-										<li><a href="https://github.com/RafaelSonego/sampleHibernate" target="_blank"> Hibernate </a></li>
-										<li><a href="https://github.com/RafaelSonego/interviewQuestions" target="_blank"> Interview Questions </a></li>
-										<li><a href="https://github.com/RafaelSonego/MockitoJUnit" target="_blank"> Mockito and JUnit </a></li>
-										<li><a href="https://github.com/RafaelSonego/md5" target="_blank"> Java MD5 </a></li>
-										<li><a href="https://github.com/RafaelSonego/sampleMavenProject" target="_blank"> Maven </a></li>
-									</ul>	
-								</div>
-							</div>
+  <div class="container-fluid p-0">
 
-						</li>
-					</ul>
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">Rafael
+          <span class="text-primary">Silva</span>
+        </h1>
+        <div class="subheading mb-5">Bathurst Street · Toronto, ON M5P 3K1 ·
+          <a href="mailto:silvarafael@gmail.com">silvarafael@gmail.com</a>
+        </div>
+        <p class="mb-0">
+          Over 7 years of experience as Software Developer with strong Java skills, including tools and frameworks.
+        </p>
+        <p class="mb-5">
+          I focus on user experience to create solutions always looking how to re-use the standard code in order to keep it simple.
+          By using this methodology, I deliver synergized solutions using the best practices to reduce the time to market
+          and enhance the user experience.
+        </p>
+        <ul class="list-inline list-social-icons mb-0">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/Rafael.Sonego" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/rafaelfoice" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/rafaelsonego" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/RafaelSonego" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-				</div>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+      <div class="my-auto">
+        <h2 class="mb-5">Experience</h2>
 
-			</div>
-		</nav>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Full Stack Developer</h3>
+            <div class="subheading mb-3">The Pixel Shop, Toronto, ON</div>
+            <p class="mb-2">As a full stack developer in an agile environment working with Kentico CMS, participating in all lifecycle of
+              development for delivering a great experience and features for the customers. Working closely with product
+              owners and front-end team to implement the server-side code in order to develop complex and interactive websites.
+              </p>
+            <p>Some of my responsibilities include back-end side development using C#, MS-SQL Server, continuous integration
+              (CDI) using Jenkins and Visual Studio Team Services, managing the cloud computing using Microsoft Azure and
+              working on client care requests, as level 3 support, in order to fix bugs in the live environment for multiples
+              clients.</p>
+            <p>Key Achievemenst:</p>
+            <ul>
+              <li>
+                Contributed to the development of “A-Plan by Volvo” project, which was the winner of the site of the year 2017 by Kentico;
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">November 2017 - Present</span>
+          </div>
+        </div>
 
-		<article id="about">
-			<header>
-				<h1>About</h1>
-			</header>
-			<div class="conteudo">
-				<p>
-					Proactive professional with over 9+ years of experience that focuses on the quality of the development process following the best-known practices of object-oriented programming. Experience in analysis and developing systems with specializing in maintenance and performance. Always looking forward to applying new technology and its concepts on a day-to-day basis.
-				</p>
-			</div>
-		</article>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Senior Java Developer</h3>
+            <div class="subheading mb-3">Certisign Digital</div>
+            <p class="mb-2">Acting as a Senior Java Developer in the main company system. The system is Web-based built using Java and a
+              set of frameworks and tools such as Eclipse, Git, Spring framework (DI, MVC, Boot), JPA, Hibernate for the
+              back-end, HTML5, JSP, JSTL, jQuery for the front-end, JUnit and Mockito for unit testing, Maven for build and
+              management dependences, Jenkins for continuous integration and JBoss EAP 6.3 as application server and Oracle
+              database. </p>
+            <p class="mb-4">Also discussing with both technical and business teams for new features, improvement and architectural changes
+              in the applications.</p>
+            <p>Key Achievemenst:</p>
+            <ul>
+              <li>
+                Creation of a management system that supports the process of digital certification. It can create customized profiles and
+                configure steps based on the company’s systems while generating digital certificates. It drastically reduces
+                the operational workload;
+              </li>
+              <li>
+                Developed a mail service that sends customized e-mails with the goal to edit and send different and personalized e-mail templates
+                without keeping static HTML files;
+              </li>
+              <li>
+                Worked on a project that integrates with the Brazilian government's web service that detects fraud in the digital certification
+                validation process;
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">February 2015 - March 2017</span>
+          </div>
+        </div>
 
-		<article id="technicalProficiencies">
-			<header>
-				<h1>Technical Proficiencies</h1>
-			</header>
-			<div class="conteudo">
-				<header>
-					<h3><strong>Certifications</strong></h3>
-				</header>
-				<ul>
-				  <li>MCP 70-480 - Programming in HTML5 with JavaScript and CSS3;</li>
-				  <li>OCWCD - Java Enterprise Edition 5 Web Component Developer Certified Professional;</li>
-				  <li>OCJP - Oracle Certified Java Professional, Java SE 6;</li>
-				</ul>
-			</div>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Senior Java Developer Consultant</h3>
+            <div class="subheading mb-3">GPS - Pamcary</div>
+            <p class="mb-4">Acting as a Senior Java Consultant for a cargo transport insurance industry system using Java and a set of frameworks
+              and tools such as Eclipse, SVN, Spring framework (DI and Jdbc) for the back-end, JUnit for unit testing, Maven
+              for management dependences, Ant for build the application, JSF 1.2 using Richfaces for front-end, Quartz for
+              run the tasks, Jasper Reports for reports, JBoss EAP 5.1 as application server and DB2 as a database.</p>
+            <p>Key Achievemenst:</p>
+            <ul>
+              <li>
+                Worked on a project to integrate two different enterprise systems using SOAP web service to update quotation data. Saved
+                80% of the transaction time. Average of over 2000 transactions daily.
+              </li>
+              <li>
+                Optimizing stored procedures to fix the performance, reducing overload on the server side. 32% of performance improvement.
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">February 2014 - February 2015</span>
+          </div>
+        </div>
 
-			<div class="conteudo">
-				<header>
-					<h3><strong>Methodologies</strong></h3>
-				</header>
-				<ul>
-					<li>Waterfall;</li>
-					<li>Agile;</li>									
-				</ul>
-			</div>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Software Developer</h3>
+            <div class="subheading mb-3">Itau Unibanco Bank</div>
+            <p class="mb-2">Acting as a software developer at a financial industry working in a multidisciplinary team that deals with legacy
+              projects written in both Java and Microsoft technologies.</p>
+            <p class="mb-4">Maintained and customized the Web applications build using Java and a set of frameworks and tools such as Eclipse,
+              ClearCase, ClearQuest, JSE, JEE, JSP, JUnit, Servlet, JSTL, Struts, JavaScript, jQuery, JSF, Richfaces, Hibernate,
+              JPA, Sybase database and the Desktop application using Windows Forms, VB6, VB.Net, C# and stored procedures.</p>
+            <p>Key Achievemenst:</p>
+            <ul>
+              <li>
+                Development of a new layout in the insurance quotation system, allowing the user to complete the process in fewer steps while
+                maintaining values and safety, increasing operational efficiency and efficacy by over 40%.
+              </li>
+              <li>
+                Worked on the insurance database migration and integration from the financial company Unibanco to Itau creating multiple
+                tasks in order to update the Itau database with insurance information from Unibanco.
+              </li>
+            </ul>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">October 2010 - February 2014</span>
+          </div>
+        </div>
 
-			<div class="conteudo">
-				<header>
-					<h3><strong>Tools</strong></h3>
-				</header>
-				<ul>
-					<li>Eclipse IDE;</li>
-					<li>Visual Studio;</li>
-					<li>Visual Studio Code;</li>
-					<li>PL/SQL Developer;</li>									
-					<li>ClearCase;</li>
-					<li>ClearQuest;</li>
-					<li>TortoiseSVN;</li>
-				</ul>				
-			</div>
+      </div>
 
-			<div class="conteudo">
-				<header>
-					<h3><strong>Skills</strong></h3>
-				</header>
-				<p>
-					Design Patterns; OOP; Java SE; Java EE; JSP; Servlet; JSTL; Spring Core; Spring JDBC; Spring MVC; JSF; RichFaces; JPA; Hibernate; JUnit; Mockito; Jasper Report; Web-Services; REST; SOAP; PL/SQL; .NET; VB.net; C#; JQuery;  Angular 2; JavaScript; HTML; CSS; JSON; XML; Maven; Jenkins; Nexus; SVN, GIT;
-				</p>										
-			</div>				
+    </section>
 
-		</article>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+      <div class="my-auto">
+        <h2 class="mb-5">Education</h2>
 
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">University of Campinas</h3>
+            <div class="subheading mb-3">Postgraduate Diploma in Software Engineering (MSc)</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2009 - June 2010</span>
+          </div>
+        </div>
 
-		<article id="experience">
-			<header>
-				<h1>Experience</h1>
-			</header>
-			<div class="conteudo">
-				<header>
-					<h3><strong>Senior System Analyst (Feb-2015 – Mar-2017) 	Certisign Certificadora Digital, São Paulo, SP</strong></h3>
-				</header>
-				<p>
-					The biggest project in which I worked on involved refactoring an old system built with obsolete technology that was causing expensive maintenance, so I had to do a reverse engineering to be able to understand the features. To do this, I analyzed the code to understand the features and I talked with the stakeholders to be able to validate my understanding about the system and improve the user experience for developing the new system screens using some technologies such as Java EE, JSF 1.2, Richfaces, Spring (Core, MVC and JDBC), Rest, Soap, JUnit, Mockito, JSP, JSTL, HTML5, CSS, Angular 2, JavaScript, Maven and Jenkins.					
-				</p>
-				<h4><strong>Key Achievements:</strong></h4>
-				<ul>
-					<li>
-						Creation of a management system that supports the process of digital certification. It can create customized profiles and configure steps based on the company’s systems while generating digital certificates. It drastically reduces the operational workload;
-					</li>
-					<li>
-						Developed a mail service that sends customized e-mails with the goal to edit and send different and personalized e-mail templates without keeping static HTML files;
-					</li>
-					<li>
-						Worked on a project that integrates with the Brazilian government's web service that detects fraud in the digital certification validation process;
-					</li>
-				</ul>
-			</div>
+        <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">University of Campinas</h3>
+            <div class="subheading mb-3">Bachelor Degree in Computer Science (BSc)</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">March 2004 - June 2008</span>
+          </div>
+        </div>
 
-			<div class="conteudo">
-				<header>
-					<h3><strong>Senior Java Developer (Feb-2014 – Feb-2015) 	GPS - Pamcary, São Paulo, SP</strong></h3>
-				</header>
-				<p>
-					Acted as a Java Consultant for new demands and bug fixes for systems that are part of the cargo transport insurance industry. Responsible for the analysis and extraction of the system requirements with the stakeholders and developing new features using object-oriented programming implementing the best practices for the company, limiting risk management in insurance systems using some technologies such as JSF 1.2, Richfaces, Spring (Core and JDBC), Quartz, Jasper Reports, Maven, Ant, JUnit, JBoss 5.1 and DB2.				
-				</p>
-				<h4><strong>Key Achievements:</strong></h4>
-				<ul>
-					<li>
-						Worked on a project that communicates with “Mapfre Seguros” system using SOAP webservice to update quotation data.
-					</li>
-					<li>
-						Optimizing stored procedures to fix the performance, reducing overload on the server side.
-					</li>
-				</ul>
-			</div>			
+      </div>
+    </section>
 
-			<div class="conteudo">
-				<header>
-					<h3><strong>Analysis Programmer (Oct-2010 – Feb-2014) 	Itau Unibanco, São Paulo, SP</strong></h3>
-				</header>
-				<p>
-					Worked for almost four years in the insurance department in a multidisciplinary team that deals with legacy projects written in both Java and Microsoft technologies. Maintained and customized the Web and Desktop applications that handle the insurance process Workflow from the insurance quotation to issue policies using some technologies such as Java EE, JSP, Servlet, JSTL, JavaScript, JQuery, VB.net, C#, Sybase and PL/SQL.			
-				</p>
-				<h4><strong>Key Achievements:</strong></h4>
-				<ul>
-					<li>
-						Development of a new layout in the insurance quotation system allowing fewer steps while maintaining values and safety, gaining operational profit in a secure setting.
-					</li>
-					<li>
-						Worked on the database migration and integration from Unibanco to Itau.
-					</li>
-				</ul>
-			</div>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+      <div class="my-auto">
+        <h2 class="mb-5">Skills</h2>
 
-		</article>
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline list-icons">
+          <li class="list-inline-item">
+            <i class="devicons devicons-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-css3"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-javascript"></i>
+          </li>
+          <li class="list-inline-item">
+              <i class="devicons devicons-angular"></i>
+          </li>                              
+          <li class="list-inline-item">
+            <i class="devicons devicons-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="devicons devicons-java"></i>
+          </li>
+          <li class="list-inline-item">
+              <i class="devicons devicons-linux"></i>
+          </li>
+          <li class="list-inline-item">
+              <i class="devicons devicons-git"></i>
+          </li>
+          <li class="list-inline-item">
+              <i class="devicons devicons-mysql"></i>
+          </li>
+          <li class="list-inline-item">
+              <i class="devicons devicons-database"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-		<article id="education">
-			<header>
-				<h1>Education</h1>
-			</header>
-			<div class="conteudo">
-				<ul>
-					<li>
-						2009-2009 - <strong>Postgraduate Diploma in Software Engineering</strong> – Universidade Estadual de Campinas
-					</li>
-					<li>
-						2004-2008 - <strong>Diploma in Computer Science</strong> – Universidade Estadual de Campinas
-					</li>
-				</ul>
-			</div>
-		</article>
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+      <div class="my-auto">
+        <h2 class="mb-5">Awards &amp; Certifications</h2>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Java Enterprise Edition 5 Web Component Developer Certified Professional (OCWCD);
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Oracle Certified Java Professional, Java SE 6 (OCJP);
+          </li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            Programming in HTML5 with JavaScript and CSS3 (MCP 70-480);
+          </li>
+        </ul>
+      </div>
+    </section>
 
-		<article id="volunteer">
-			<header>
-				<h1>Volunteer Experience</h1>
-			</header>
-			<div class="conteudo">
-				<ul>
-					<li>
-						2017-Present - <strong>General Assistant</strong> – The United Church of Canada, Toronto, ON, Canada
-					</li>
-				</ul>				
-			</div>
-		</article>		
+  </div>
 
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
+</body>
+
 </html>
