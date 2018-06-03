@@ -1,2 +1,2 @@
 # rafaelsonego.com
-static page about me and my projects
+Static HTML using https://startbootstrap.com/template-overviews/resume/ template
